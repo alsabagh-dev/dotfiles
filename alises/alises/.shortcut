@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+# Shortcuts
+# alias d="cd ~/Documents/Dropbox"
+alias dl="cd ~/Downloads"
+alias dt="cd ~/Desktop"
+alias ws="cd ~/Workspace"
+alias p="cd ~/Workspace/projects"
+alias g="git"
+alias gti='git'

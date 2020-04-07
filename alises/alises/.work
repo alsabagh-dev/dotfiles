@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+# Work related
+alias shop='code ~/Workspace/oq-client-web-ssr'
+alias blog='code ~/Workspace/oq-ui-ssr'
+alias back='code ~/Workspace/OQ-3'
+alias db='cd ~/Workspace/OQ-3 && nodemon --inspect app.js'
+alias mon='mono /usr/share/ssm/Screenshot\ Monitor.exe & exit'
