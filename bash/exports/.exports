@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-for FILE in $( find ~/.dotfiles/exports/exports/ -type f  -name '*' -print  );
+for FILE in $( find ~/.dotfiles/bash/exports/exports/ -type f  -name '*' -print  );
     do
         [ -r "$FILE" ] && [ -f "$FILE" ] && source "$FILE";
     done

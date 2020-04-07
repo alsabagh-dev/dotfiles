@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-for FILE in $( find ~/.dotfiles/aliases/aliases/ -type f  -name '*' -print  );
+for FILE in $( find ~/.dotfiles/bash/aliases/aliases/ -type f  -name '*' -print  );
     do
         [ -r "$FILE" ] && [ -f "$FILE" ] && source "$FILE";
     done

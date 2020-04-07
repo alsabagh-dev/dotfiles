@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-for FILE in $( find ~/.dotfiles/functions/functions/ -type f  -name '*' -print  );
+for FILE in $( find ~/.dotfiles/bash/functions/functions/ -type f  -name '*' -print  );
     do
         [ -r "$FILE" ] && [ -f "$FILE" ] && source "$FILE";
     done
