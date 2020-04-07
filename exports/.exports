@@ -1,10 +1,11 @@
 #!/usr/bin/env bash
 
-for file in `./exports`;
-do
-	[ -r "$file" ] && [ -f "$file" ] && source "$file";
-done;
-unset file;
+for FILE in $( find ~/.dotfiles/exports/exports/ -type f  -name '*' -print  );
+    do
+        [ -r "$FILE" ] && [ -f "$FILE" ] && source "$FILE";
+    done
+unset FILE;
+
 
 # Make Python use UTF-8 encoding for output to stdin, stdout, and stderr.
 export PYTHONIOENCODING='UTF-8';
