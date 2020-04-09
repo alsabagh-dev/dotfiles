@@ -202,22 +202,6 @@ extract-audio-from-video(){
     ffmpeg  -i "$1" "$2"
 }
 
-download-pluralsight-video(){
-    if [ $# -eq 1 ]
-        then
-            youtube-dl --username "abdel-aziz-abdel-nas" --password "DYBPsWDg9QrcGZr" --sleep-interval 20  -o '%(playlist_title)s/%(chapter_number)s - %(chapter)s/%(playlist_index)s-%(title)s.%(ext)s' --sub-lang en --write-sub --playlist-start 1 "$1"
-    fi
-
-    if [ $# -eq 2 ]
-        then
-            youtube-dl --username "abdel-aziz-abdel-nas" --password "DYBPsWDg9QrcGZr" --sleep-interval 20  -o '%(playlist_title)s/%(chapter_number)s - %(chapter)s/%(playlist_index)s-%(title)s.%(ext)s' --sub-lang en --write-sub --playlist-start "$2" "$1"
-    fi
-
-    if [ $# -eq 3 ]
-        then
-            youtube-dl --username "abdel-aziz-abdel-nas" --password "DYBPsWDg9QrcGZr" --sleep-interval "$3"  -o '%(playlist_title)s/%(chapter_number)s - %(chapter)s/%(playlist_index)s-%(title)s.%(ext)s' --sub-lang en --write-sub --playlist-start 1 "$1"
-    fi
-}
 rm-branches(){
     git branch | grep -v "master" | grep -v "blog" | grep -v ^* | xargs git branch -D
 }
