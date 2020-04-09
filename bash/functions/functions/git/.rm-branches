@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+# Removes all branches except for master and the provieded one.
 function rm-branches(){
     if [ $# -eq 1 ]
         then
