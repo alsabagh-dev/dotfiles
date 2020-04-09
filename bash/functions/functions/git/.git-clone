@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+function git-clone-cd(){
+    git clone "$1" && cd "$(basename "$1" .git)"
+}

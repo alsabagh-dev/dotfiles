@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+function rm-branches(){
+    if [ $# -eq 1 ]
+        then
+        git branch | grep -v "master" | grep -v "$1" | grep -v ^* | xargs git branch -D;
+    fi
+}
