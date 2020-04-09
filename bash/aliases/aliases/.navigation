@@ -7,3 +7,5 @@ alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
+alias cw="cd ~/Workspace/"
+alias cl="cd ~/Workspace/LEARN"
