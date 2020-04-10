@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+download(){
+    # params: URL
+    if [ $# -eq 1 ]
+        then
+            curl --location --output --remote-name --remote-header-name -C -O "$1";
+    fi
+    # params: URL (1) , Name (2)
+    if [ $# -eq 2 ]
+        then
+            curl --location --output "$2"  --remote-header-name -C -O  "$1";
+    fi
+}
