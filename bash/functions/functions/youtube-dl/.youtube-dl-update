@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+function update-youtube-dl() {
+    sudo pip3 install --upgrade youtube_dl;
+}
+

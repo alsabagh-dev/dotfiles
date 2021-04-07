@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+function download-youtube-playlist() {
+    youtube-dl  -i --format best --output "%(playlist)s/%(playlist_index)s - %(title)s.%(ext)s" --yes-playlist --continue  "$1";
+}
+
+function download-youtube-playlist-with-sub(){
+	youtube-dl  -i --format best --output "%(playlist)s/%(playlist_index)s - %(title)s.%(ext)s" --yes-playlist --continue --sub-lang "$2" --write-sub --embed-subs  "$1";
+}

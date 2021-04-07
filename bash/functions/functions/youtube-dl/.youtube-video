@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+function download-youtube-video() {
+    youtube-dl --format best --output "%(title)s.%(ext)s" --no-playlist --continue "$1";
+}
+
+function download-youtube-video-with-sub(){
+	youtube-dl --format best --output "%(title)s.%(ext)s" --no-playlist --continue --sub-lang "$2" --write-sub --embed-subs "$1";
+}
