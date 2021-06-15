@@ -2,7 +2,6 @@
 export PATH="$HOME/bin:$PATH";
 export PATH="$HOME/.local/bin:$PATH";
 
-
 export THEME=~/.dotfiles/bash/agnoster.bash
 if [[ -f $THEME ]]; then
     export DEFAULT_USER=`whoami`
